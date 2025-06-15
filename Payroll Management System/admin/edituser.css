@@ -1,0 +1,105 @@
+/* Full viewport height and center content */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Main content container with white background and padding */
+  .main-content {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  
+  /* Heading */
+  .main-content h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+  }
+  
+  /* Error message */
+  .main-content > div[style*="color: red"] {
+    color: #d93025;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form labels */
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  /* Input fields and select */
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border: 1.8px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus,
+  select:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  /* Buttons container */
+  form > .btn-edit,
+  form > .btn-cancel {
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    user-select: none;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s;
+    text-decoration: none;
+  }
+  
+  /* Save Changes button */
+  .btn-edit {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+  }
+  
+  .btn-edit:hover {
+    background-color: #43a047;
+  }
+  
+  /* Cancel button */
+  .btn-cancel {
+    background-color: #ccc;
+    color: #333;
+    margin-left: 10px;
+    border: none;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #b3b3b3;
+  }
+  

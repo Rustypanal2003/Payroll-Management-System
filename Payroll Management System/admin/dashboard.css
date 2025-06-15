@@ -1,0 +1,86 @@
+
+  
+  .sidebar {
+    height: 100vh;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1f2937;
+    padding-top: 20px;
+    color: white;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar a {
+    padding: 12px 20px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .sidebar a:hover, .sidebar a.active {
+    background-color: #374151;
+  }
+  
+  .main-content {
+    margin-left: 240px; /* assuming sidebar width */
+    padding: 30px 40px;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content h2 {
+    color: #333;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #3b82f6;
+    padding-bottom: 10px;
+    max-width: 320px;
+}
+
+.dashboard-cards {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.card {
+    background: linear-gradient(135deg, #4f46e5, #3b82f6);
+    color: white;
+    flex: 1 1 260px;
+    max-width: 300px;
+    padding: 30px 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(59, 130, 246, 0.5);
+}
+
+.card h3 {
+    margin: 0 0 15px;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+.card p {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.05em;
+}

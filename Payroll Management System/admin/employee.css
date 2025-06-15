@@ -1,0 +1,166 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base styling */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #f9fafb;
+    color: #333;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 240px;
+    background: #1e293b;
+    color: #fff;
+    padding: 30px 20px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 10px;
+  }
+  
+  .sidebar a {
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 6px;
+    transition: 0.2s ease;
+  }
+  
+  .sidebar a.active,
+  .sidebar a:hover {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  /* Main content */
+  .main-content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+  }
+  
+  /* Heading */
+  .main-content h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #111827;
+  }
+  
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  
+  thead {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  thead th {
+    padding: 14px;
+    text-align: left;
+  }
+  
+  tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f5f9;
+  }
+  
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      overflow-x: auto;
+    }
+  
+    .sidebar h2 {
+      display: none;
+    }
+  
+    .main-content {
+      padding: 20px;
+    }
+  }
+  
+
+  .actions {
+    margin-bottom: 20px;
+    text-align: right;
+  }
+  
+  .btn-add {
+    padding: 10px 16px;
+    background-color: #10b981;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s ease;
+  }
+  
+  .btn-add:hover {
+    background-color: #059669;
+  }
+  
+  .btn-edit, .btn-delete {
+    padding: 6px 10px;
+    margin-right: 5px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .btn-edit {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  .btn-delete {
+    background-color: #ef4444;
+    color: white;
+  }
+  
+  .btn-edit:hover {
+    background-color: #2563eb;
+  }
+  
+  .btn-delete:hover {
+    background-color: #dc2626;
+  }
+  
